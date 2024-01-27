@@ -1,0 +1,8 @@
+main:
+SP = SP - 4
+M[SP] = 6
+R1 = M[SP]
+R1 = R1 + 1
+M[SP] = R1
+SP = SP + 4
+RET

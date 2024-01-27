@@ -1,0 +1,12 @@
+main:
+SP = SP - 4
+M[SP] = 5
+R1 = M[SP]
+BLT R1, 0, PC+12
+R2 = R1 * 2
+M[SP] = R2
+R1 = M[SP]
+BGE R1, 10, PC+8
+M[SP] = 100
+SP = SP + 4
+RET

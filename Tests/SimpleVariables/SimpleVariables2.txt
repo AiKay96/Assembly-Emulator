@@ -1,0 +1,5 @@
+main:
+SP = SP - 1
+M[SP] =.1 65
+SP = SP + 1
+RET

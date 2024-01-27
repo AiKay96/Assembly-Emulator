@@ -1,0 +1,9 @@
+main:
+SP = SP - 504
+M[SP+500] = 10
+R1 = M[SP+500]
+R2 = R1 * 10
+R2 = R2 + 8
+M[SP + R2] = .2 R1
+SP = SP + 504
+RET

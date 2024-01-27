@@ -1,0 +1,6 @@
+main:
+SP = SP - 100
+R1 = 15 * 4
+M[SP + R1] = 7
+SP = SP + 100
+RET

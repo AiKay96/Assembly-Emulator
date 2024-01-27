@@ -1,0 +1,31 @@
+fibonacci:
+R1 = M[SP+4]
+BGT R1, 1, PC + 12
+RV = R1
+JMP PC + 64
+SP = SP - 12
+R1 = M[SP + 16]
+R1 = R1 - 1
+M[SP] = R1
+CALL <fibonacci>
+M[SP + 8] = RV
+R1 = M[SP + 16]
+R1 = R1 - 2
+M[SP] = R1
+CALL <fibonacci>
+M[SP + 4] = RV
+R1 = M[SP + 8]
+R2 = M[SP + 4]
+RV = R1 + R2
+SP = SP + 12
+RET
+main:
+SP = SP - 12
+M[SP] = 10
+CALL <fibonacci>
+M[SP + 8] = RV
+M[SP] = 5
+CALL <fibonacci>
+M[SP + 4] = RV
+SP = SP + 12
+RET

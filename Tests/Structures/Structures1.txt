@@ -1,0 +1,8 @@
+main:
+SP = SP - 10
+M[SP + 7] =.1 65
+M[SP] = 40000
+R1 = M[SP]
+M[SP + 8] = .2 R1
+SP = SP + 10
+RET

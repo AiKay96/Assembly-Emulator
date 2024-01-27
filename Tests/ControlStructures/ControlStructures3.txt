@@ -1,0 +1,14 @@
+main:
+SP = SP - 5
+M[SP + 4] = .1 65
+M[SP] = 0
+R1 = M[SP]
+BGE R1, 10, PC+28
+R2 = .1 M[SP+4]
+R2 = R2 + R1
+M[SP + 4] = .1 R2
+R1 = R1 + 1
+M[SP] = R1
+JMP PC-28
+SP = SP + 5
+RET

@@ -1,0 +1,7 @@
+main:
+SP = SP - 5
+M[SP] = 1025
+R1 = M[SP]
+M[SP + 4] =.1 R1
+SP = SP + 5
+RET

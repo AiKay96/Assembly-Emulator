@@ -30,8 +30,6 @@ Clone the repo
    git clone https://github.com/Aiushta96/Assembly-Emulator.git
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## Usage
 
 ### Compile and run
@@ -40,15 +38,10 @@ In order to compile and run the project, use the following commands:
 ```sh
    g++ *.cpp && ./a.out
 ```
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Execute an assembly file
 After running the project, you'll need to test it by a file in which assembly instructions are written. I've provided some [tests](https://github.com/Aiushta96/Assembly-Emulator/tree/main/Tests) which you can also use. If you want to know what particular test file really does, you must know that almost every test file has its corresponding C file, so if you're not familiar with those instructions, you can see what C code translates into this assembly file.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
